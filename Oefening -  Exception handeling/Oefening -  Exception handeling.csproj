@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Oefening____Exception_handeling</RootNamespace>
+    <AnalysisLevel>5.0</AnalysisLevel>
+  </PropertyGroup>
+
+</Project>
