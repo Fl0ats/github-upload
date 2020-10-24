@@ -13,5 +13,16 @@ namespace Oefening____Exception_handeling
         {
             Age = age;
         }
+
+        public static void controlAge(List<Cat> catList)
+        {
+            Cat[] cats = catList.ToArray();
+
+            if (!Array.TrueForAll(cats, c => c.Age <= 0))
+            {
+                throw new CustomError($"Kat heeft een ongeldige leeftijd");
+            }
+
+        }
     }
 }

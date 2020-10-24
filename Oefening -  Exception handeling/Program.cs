@@ -24,29 +24,22 @@ do
     }
 
 } while (aantalSucessen < 2);
+
+
 try
 {
     var myCat = new Cat(6);
     var myCat2 = new Cat(2);
     var myCat3 = new Cat(-7);
     var catList = new List<Cat> { myCat, myCat2, myCat3 };
-    controlAge(catList);
+    Cat.controlAge(catList);
 }
 catch (CustomError)
 {
     Console.WriteLine("Fout opgevangen");
     throw;
 }
-static void controlAge(List<Cat> catList)
-{
-    Cat[] cats = catList.ToArray();
 
-    if (!Array.TrueForAll(cats, c => c.Age <= 0))
-    {
-        throw new CustomError($"Kat heeft een ongeldige leeftijd");
-    }
-
-}
 
 
 
